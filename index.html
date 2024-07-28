@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maths Workout</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="title">
+      <div class="home-nav">
+        <button class="home-nav-btn">HOME <i class="bi bi-house"></i></button>
+        <button class="home-nav-btn-small" id="home-nav-btn-small">
+          <i class="bi bi-house"></i>
+        </button>
+      </div>
+      <div class="title-nav">
+        <h1>Math Workout</h1>
+
+        <span><img class="icon" src="./images/icon.png" alt="" /></span>
+      </div>
+    </div>
+    <div class="container">
+      <div class="main">
+        <button class="exponent-btn">Exponents</button>
+      </div>
+      <div class="selection-menu">
+        <p>
+          Exponent:
+          <select id="exponents">
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+        </p>
+
+        <p>
+          Numbers:
+          <select id="numbers">
+            <option value="10">1-10</option>
+            <option value="20">11-20</option>
+          </select>
+        </p>
+
+        <button class="start-btn">Start</button>
+      </div>
+      <div id="clock">
+        <span id="seconds">3</span>
+      </div>
+      <div class="question-menu">
+        <h1 class="question-menu-heading">5<sup>2</sup></h1>
+        <input class="question-input" type="text" />
+        <audio id="audio" src="./audio/correct.mp3"></audio>
+      </div>
+      <div class="result-menu">
+        <h1>Result</h1>
+        <span id="correct" class="correct">Correct </span>
+        <span id="wrong">Wrong </span>
+        <div class="resultMenuButtons">
+          <button class="repeat-btn">
+            REPEAT <i class="bi bi-repeat"></i>
+          </button>
+          <button class="home-btn" id="home-btn">
+            HOME <i class="bi bi-house"></i>
+          </button>
+        </div>
+
+        <div class="score-container"></div>
+      </div>
+    </div>
+  </body>
+</html>
